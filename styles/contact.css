@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Junge', serif;
+    background-color: white;
+    height: 100vh;
+    overflow: auto;
+}
+
+header {
+    background-color: rgb(143, 195, 75);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    color: white;
+    text-align: left;
+    margin: 0;
+}
+
+.header-links {
+    display: flex;
+}
+
+.header-links a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Junge', serif;
+    margin-left: 15px;
+    margin-right: 5px;
+    font-size: 18px; 
+}
+
+.background-image {
+    background-image: url('../iw.jpg'); 
+    background-size: 50px;
+    margin-top: 1px;
+    background-repeat: repeat;
+    height: 40px; 
+}
+.contact-image {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-image img {
+    width: 90%;
+    max-width: 100px; 
+    cursor: pointer;
+}
+
+/* this is where the contact form css starts*/
+.contact-form {
+    flex: 1;
+    text-align: center;
+}
+
+.contact-form h2 {
+    color: rgb(143, 195, 75);
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 50%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.contact-form button {
+    background-color: rgb(143, 195, 75);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px; 
+}
+
