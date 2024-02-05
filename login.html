@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>login to artist account</h2>
+        <form id="loginForm">
+            <label for="username">user:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">pass:</label>
+            <input type="password" id="password" name="password" required>
+                    <!-- pass control the login.js file-->
+            <button type="button" onclick="checkLogin()">Login</button>
+        </form>
+    </div>
+    <p></p>
+    <a href="index.html">take me home!</a>
+    <script src="login.js"></script>
+</body>
+
+<p style="text-align: left; font-size: 10px; color: #555;">&copy; 2024 Iris Westerman. All rights reserved. | Designed by Rylan Sedlacek</p>
+<p id="last-updated" style="text-align: left; font-size: 10px; color: #555;"> last updated: 2/4/24</p>
+
+</html>
