@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact - iris westerman</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" type="image/png" href="images/iwfavicon.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Junge">
+</head>
+
+<style>
+    /* css inside of the HTML file because I'm lazy, 2/4 */
+    h1 a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    h1 a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+
+<body>
+<header>
+    <div class="header-content">
+        <h1><a href="index.html">contact</a></h1>
+        <div class="header-links">
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+</header>
+    
+    <div class="background-image"></div>
+
+    <!-- Added a contact form, Iris is going to make an account for forms on 2/1/24-->
+    <div class="contact-form">
+        <h2>contact me</h2>
+        <form action="https://formspree.io/f/mnqepvlv" method="POST">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+    
+            <button type="submit">send</button>
+        </form>
+    </div>
+
+    <!-- make this smaller -->
+    <div class="contact-image">
+        <a href="https://www.instagram.com/atrawberu/" target="_blank">
+            <img src="images/instagram1.png" alt="instagram">
+        </a>
+    </div>
+
+    <div class="background-image"></div>
+    
+    <footer>
+        <p style="text-align: center; font-size: 10px; color: #555;">&copy; 2024 Iris Westerman. All rights reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+
+</html>
