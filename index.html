@@ -138,17 +138,24 @@
         ];
 
         // to change homescreen 
-       function changeImage() {
+     // Add this logging statement to check if `imagePool` is correctly populated
+console.log("Image pool:", imagePool);
+
+// Modify `changeImage` function to log the changes
+function changeImage() {
+    console.log("Changing images...");
     var displayedImages = document.querySelectorAll('.hover-image');
     displayedImages.forEach(image => {
         var randomIndex = Math.floor(Math.random() * imagePool.length);
         var randomImage = imagePool[randomIndex];
         image.src = randomImage;
+        console.log("Image source updated:", image.src);
     });
 }
 
-        // 7 seconds, my attention span.
-        setInterval(changeImage, 7000);
+// Add logging to check if `changeImage` is being called
+console.log("Setting interval for changeImage...");
+setInterval(changeImage, 7000);
     </script>
 
     <!--
