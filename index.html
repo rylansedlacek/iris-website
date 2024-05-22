@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iris westerman</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/iwfavicon.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Junge">
+</head>
+
+<style>
+     /* css inside of the HTML file because I'm lazy, 2/4 */
+    h1 a {
+        text-decoration: none;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    h1 a:hover {
+        text-decoration: underline;
+    }
+
+    /* broken on 2/6/24
+
+   /* #home-button {
+    width: 30px; 
+    height: auto;
+    cursor: pointer;
+    } */
+
+
+</style>
+</head> 
+<body>
+<header>
+    <div class="header-content">
+
+        <!-- broken on 2/6/24-->
+       <!-- <img id="home-button" src="images/home.png" alt="Home" onclick="goToIndex()"> -->
+
+        <h1><a href="index.html">home</a></h1>
+        <div class="header-links">
+            <a href="index.html">home</a>
+            <a href="gallery.html">gallery</a>
+            <a href="about.html">about</a>
+            <a href="contact.html">contact</a>
+        </div>
+    </div>
+</header>
+    <div class="background-image"></div>
+
+ <div class = "intro-container">
+    <div class = "intro-title">
+        <h2>iris westerman</h2>
+    </div>
+</div>
+
+<div id="image-container" class="image-container">
+    <div class="hover-image-container">
+        <img src="images/twojelly_photo.jpg" alt="drawing of two jelly" class="hover-image">
+        <div class="hover-image-overlay"></div>
+        <div class="hover-image-text">colored pencil on paper | 2024</div>
+    </div>
+    <div class="hover-image-container">
+        <img src="images/jelly_photo.jpg" alt="drawing of twix candy" class="hover-image">
+        <div class="hover-image-overlay"></div>
+        <div class="hover-image-text">oil on canvas | 2024</div>
+    </div>
+    <div class="hover-image-container">
+        <img src="images/scream.jpg" alt="collage" class="hover-image">
+        <div class="hover-image-overlay"></div>
+        <div class="hover-image-text">mixed media | 2023</div>
+    </div>
+    <div class="hover-image-container">
+        <img src="images/beetle.jpg" alt="drawing of beetle" class="hover-image">
+        <div class="hover-image-overlay"></div>
+        <div class="hover-image-text">watercolor on paper | 2023</div>
+    </div>
+</div>
+    <div class="view-more">
+        <a href="gallery.html">
+            <img src="images/viewmore2.png" alt="view more button">
+        </a>
+    </div>
+
+      <!-- new login button, 1/31 NOT
+      <div class="login-button">
+        <a href="login.html">Login</a>
+    </div>
+    -->
+
+    <div class="background-image"></div>
+
+    <footer>
+        <p style="text-align: center; font-size: 10px; color: #555;">&copy; 2024 Iris Westerman. All rights reserved.</p>
+    </footer>
+
+    <script src="tbd.js"></script>
+
+    <!--New Modal Container, thank you W3W schools!-->
+    <div id="modal-container" class="modal-container">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img id="modal-image" class="modal-image" src="" alt="Large Image">
+    </div>
+
+    <!-- New image Display JS-->
+    <script>
+        const imageContainers = document.querySelectorAll('.hover-image-container');
+        const modalContainer = document.getElementById('modal-container');
+        const modalImage = document.getElementById('modal-image');
+
+        imageContainers.forEach(container => {
+            container.addEventListener('click', () => openModal(container));
+        });
+
+        function openModal(container) {
+            const image = container.querySelector('.hover-image');
+            modalImage.src = image.src;
+            modalContainer.style.display = 'block';
+        }
+
+        function closeModal() {
+            modalContainer.style.display = 'none';
+        }
+    </script>
+
+    <!--
+        Designed by Rylan Sedlacek
+        2024
+        https://github.com/rylansedlacek
+    -->
+
+</body>
+
+</html>
