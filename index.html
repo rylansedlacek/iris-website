@@ -126,7 +126,7 @@
         }
 
 
-         var imagePool = [
+         var imagePool = [ //shouts out mr. puhl my principal from hs!
             'images/catimage.jpg',
             'images/cloudsandhouse.jpg',
             'images/coco_photo.jpg',
@@ -140,15 +140,15 @@
         // to change homescreen 
         function changeImage() {
             var randomIndex = Math.floor(Math.random() * imagePool.length);
-            var randomImage = imagePool[randomIndex];
+            var randomImage = imagePool[randomIndex]; // choose from pool
             var displayedImages = document.querySelectorAll('.hover-image');
             displayedImages.forEach((image, index) => {
                 image.src = imagePool[index % imagePool.length];
             });
         }
 
-        // leave this at 20k
-        setInterval(changeImage, 20000);
+        // 7 seconds, my attention span.
+        setInterval(changeImage, 7000);
     </script>
 
     <!--
