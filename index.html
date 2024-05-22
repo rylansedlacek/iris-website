@@ -138,14 +138,14 @@
         ];
 
         // to change homescreen 
-        function changeImage() {
-            var randomIndex = Math.floor(Math.random() * imagePool.length);
-            var randomImage = imagePool[randomIndex]; // choose from pool
-            var displayedImages = document.querySelectorAll('.hover-image');
-            displayedImages.forEach((image, index) => {
-                image.src = imagePool[index % imagePool.length];
-            });
-        }
+       function changeImage() {
+    var displayedImages = document.querySelectorAll('.hover-image');
+    displayedImages.forEach(image => {
+        var randomIndex = Math.floor(Math.random() * imagePool.length);
+        var randomImage = imagePool[randomIndex];
+        image.src = randomImage;
+    });
+}
 
         // 7 seconds, my attention span.
         setInterval(changeImage, 7000);
