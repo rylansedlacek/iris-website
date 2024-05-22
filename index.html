@@ -124,6 +124,31 @@
         function closeModal() {
             modalContainer.style.display = 'none';
         }
+
+
+         var imagePool = [
+            'images/catimage.jpg',
+            'images/cloudsandhouse.jpg',
+            'images/coco_photo.jpg',
+            'images/dogshugging.jpg',
+             'images/dotunicorn.jpg',
+             'images/fruit.jpg',
+             'images/greenbird.jpg',
+             'images/rabbit.jpg'
+        ];
+
+        // to change homescreen 
+        function changeImage() {
+            var randomIndex = Math.floor(Math.random() * imagePool.length);
+            var randomImage = imagePool[randomIndex];
+            var displayedImages = document.querySelectorAll('.hover-image');
+            displayedImages.forEach((image, index) => {
+                image.src = imagePool[index % imagePool.length];
+            });
+        }
+
+        // leave this at 20k
+        setInterval(changeImage, 20000);
     </script>
 
     <!--
