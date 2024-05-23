@@ -13,7 +13,6 @@ https://iriswestermanart.com
 - Use the working <b>Contact</b> form to send messages to the Arist.
 - Navigate using the buttons on the top right.
 
-
-
-
+---------------------------------------------------------------
+<h2>Version 2.1 Summer 2024</h2>
 
