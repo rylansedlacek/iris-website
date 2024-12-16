@@ -14,5 +14,5 @@ https://iriswestermanart.com
 - Navigate using the buttons on the top right.
 
 ---------------------------------------------------------------
-<h2>Version 2.1 Summer 2024</h2>
+<h2>Version 2.2 Winter 2024</h2>
 
